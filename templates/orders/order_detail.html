@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% block title %} | Oredr Detail{% endblock %}
+
+{% block content%}
+
+
+<!-- banner -->
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+      <div class="col-10 mx-auto banner text-center">
+        <h1 class="text-capitalize">
+           <strong class="banner-title">Order</strong>
+        </h1>
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+  <!-- store section -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      
+      
+      <!-- store items -->
+      <div class="row store-items" id="store-items">
+        <!-- single items -->
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card single-item">
+            <div class="img-container">
+              <a href="">
+                <img src="{{detail.photo.url}}" class="card-img-top store-img" alt="" style="min-height: 262px; max-height: 262px;">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> {{detail.name}}</h5>
+                <h5 class="store-item-value">$ <strong id="storem-item-price" class="font-weight-bold">{{detail.price}}</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <!-- end of single item -->
+     
+      </div>
+      <!-- end of store items -->
+    </div>
+  </section>
+  <!-- end of store section -->
+
+
+<!-- Contact 2 start -->
+<div class="contact-2 content-area-5" id="order">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title text-center">
+            <h1 class="text-capitalize">
+                <strong class="banner-title">Order Now</strong>
+             </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <form action="{% url 'order_detail' detail.id %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row" >
+                <div>
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="text" name="username" class="form-control" placeholder="Full Name" required>
+                                <input type="hidden" name="order_id" value="{{detail.id}}">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group email">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group subject">
+                                <input type="text" name="city" class="form-control" placeholder="city" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group number">
+                                <input type="text" name="phone" class="form-control" placeholder="phone Number" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group name">
+                                <input type="text" name="item" class="form-control" placeholder="item" value="{{detail.name}}" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group number">
+                                <input type="number" name="price" class="form-control" placeholder="price" value="{{detail.price}}">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group message">
+                                <textarea class="form-control" name="message" placeholder="Write message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="send-btn text-center">
+                                <button type="submit" class="btn btn-black">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Contact 2 end -->
+
+
+{% endblock %}

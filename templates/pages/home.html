@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% block title%} | Home {% endblock %}
+{% load static %}
+
+{% block content %}
+
+
+
+    <!-- banner -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">
+             <strong class="banner-title">welcome to Sharma Shop</strong>
+          </h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+        </div>
+        
+          
+        </div>
+      </div>
+    </div>
+    <!-- end of banner -->
+  
+  <!-- end of heder -->
+  
+  <!-- store section -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title">store</strong></h1>
+        </div>
+      </div>
+      <!-- end section title -->
+      <!-- fitler buttons -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+          <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">all</a>
+          <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">cakes</a>
+          <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">cupcakes</a>
+          <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">sweets</a>
+          <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">doughnuts</a>
+        </div>
+      </div>
+      <!-- end of filter buttons -->
+      <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form action="{% url 'order' %}" method="GET">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text search-box" id="search-icon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="item..." id="search-item" name="keyword">
+              <button type="submit" class="btn btn-black">Search</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <!-- end of search box -->
+      <!-- store items -->
+      <div class="row store-items" id="store-items">
+        <!-- single items -->
+        {% for data in item %}
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card single-item">
+            <div class="img-container">
+              <a href="{% url 'order_detail' data.id  %}">
+                <img src="{{data.photo.url}}" class="card-img-top store-img" alt="" style="min-height: 262px; max-height: 262px;">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> {{data.name}}</h5>
+                <h5 class="store-item-value">$ <strong id="storem-item-price" class="font-weight-bold">{{data.price}}</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- end of single item -->
+        
+        
+        
+       
+        
+        
+        
+    
+        
+        
+       
+
+      </div>
+      <!-- end of store items -->
+    </div>
+  </section>
+  <!-- end of store section -->
+  <!-- icons -->
+
+
+
+
+  <!--end of icons icons -->
+  <!-- services -->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <!-- single service -->
+        <div class="col-md-4 text-center my-3">
+          <!-- 
+              https://www.iconfinder.com/icons/2427860/baguette_bread_bread_loaf_food_toast_icon
+              Creative Commons (Attribution 3.0 Unported);
+              https://www.iconfinder.com/korawan_m
+                   -->
+          <img src="{% static 'img/bread-icon.png' %}" alt="bread icon">
+          <h6 class="text-uppercase my-3 service-title">bread</h6>
+          <p class="w-75 mx-auto text-left service-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rem quia expedita necessitatibus, tempore
+            veritatis quod praesentium laboriosam nesciunt placeat.
+          </p>
+        </div>
+        <!-- end of single service -->
+        <!-- single service -->
+        <div class="col-md-4 text-center my-3">
+          <!-- 
+              https://www.iconfinder.com/icons/2427875/cup_cupcake_dessertice_cream_yogurt_icon
+              Creative Commons (Attribution 3.0 Unported);
+              https://www.iconfinder.com/korawan_m
+                   -->
+          <img src="{% static 'img/cupcake-icon.png' %}" alt="bread icon">
+          <h6 class="text-uppercase my-3 service-title">cupckakes</h6>
+          <p class="w-75 mx-auto text-left service-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rem quia expedita necessitatibus, tempore
+            veritatis quod praesentium laboriosam nesciunt placeat.
+          </p>
+        </div>
+        <!-- end of single service -->
+        <!-- single service -->
+        <div class="col-md-4 text-center my-3">
+          <!-- 
+              https://www.iconfinder.com/icons/2671457/candy_sweets_treat_trick_icon
+              Creative Commons (Attribution 3.0 Unported);
+              https://www.iconfinder.com/bluelabelicons
+                   -->
+          <img src="{% static 'img/candy-icon.png' %}" alt="bread icon">
+          <h6 class="text-uppercase my-3 service-title">candy</h6>
+          <p class="w-75 mx-auto text-left service-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rem quia expedita necessitatibus, tempore
+            veritatis quod praesentium laboriosam nesciunt placeat.
+          </p>
+        </div>
+        <!-- end of single service -->
+      </div>
+    </div>
+  </section>
+  <!-- end of services -->
+  
+  
+
+  {% endblock %}

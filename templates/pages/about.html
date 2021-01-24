@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+{% block title %} | About {% endblock%}
+
+{% load static %}
+
+{% block content %}
+
+
+    <!-- banner -->
+    <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+          <div class="col-10 mx-auto banner text-center">
+            <h1 class="text-capitalize">
+               <strong class="banner-title">About</strong>
+            </h1>
+            
+          </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- end of banner -->
+
+<!-- about -->
+<section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+          {% for data in about %}
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">about <strong class="banner-title">us</strong></h1>
+
+          <p class="my-4 text-muted w-75">
+            {{data.about}}
+          </p>
+          
+        </div>
+        <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+          <div class="about-img__container">
+            <img src="{{data.photo.url}}" class="img-fluid" alt="" style="min-height: 450px; max-height: 450px;min-width: 100%; max-width: 100%; ">
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- end of about -->
+
+{% endblock %}

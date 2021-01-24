@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title%} | Order {% endblock %}
+
+{% block content %}
+
+<!-- banner -->
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+      <div class="col-10 mx-auto banner text-center">
+        <h1 class="text-capitalize">
+           <strong class="banner-title">Order</strong>
+        </h1>
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  <!-- end of banner -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title">store</strong></h1>
+        </div>
+      </div>
+      <!-- end section title -->
+      
+      <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text search-box" id="search-icon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="item..." id="search-item" name="keyword">
+              <button type="submit" class="btn btn-black">Search</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <!-- end of search box -->
+      <!-- store items -->
+      <div class="row store-items" id="store-items">
+        <!-- single items -->
+        {% for data in order %}
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card single-item">
+            <div class="img-container">
+              <a href="{% url 'order_detail' data.id  %}">
+                <img src="{{data.photo.url}}" class="card-img-top store-img" alt="" style="min-height: 262px; max-height: 262px;">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> {{data.name}}</h5>
+                <h5 class="store-item-value">$ <strong id="storem-item-price" class="font-weight-bold">{{data.price}}</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- end of single item -->
+        
+        
+        
+       
+        
+        
+        
+    
+        
+        
+       
+
+      </div>
+      <!-- end of store items -->
+    </div>
+  </section>
+  <!-- end of store section -->
+
+{% endblock %}

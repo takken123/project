@@ -1,0 +1,1055 @@
+[
+{
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+        "name": "cake",
+        "photo": "photos/21/01/22/photo-1509805735646-2f72b3272a7d_KMsn7YC.jpg",
+        "price": 5
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 2,
+    "fields": {
+        "name": "cake",
+        "photo": "photos/21/01/22/photo-1596567836640-3c13eb102106_olQdZg3.jpg",
+        "price": 6
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 3,
+    "fields": {
+        "name": "cake",
+        "photo": "photos/21/01/22/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash_hfa0g8C.jpg",
+        "price": 7
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 4,
+    "fields": {
+        "name": "cupcake",
+        "photo": "photos/21/01/22/cupcake1_LlHjwJo.jpg",
+        "price": 8
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 5,
+    "fields": {
+        "name": "cupcake",
+        "photo": "photos/21/01/22/cupcake2_cwzlqTc.jpg",
+        "price": 5
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 6,
+    "fields": {
+        "name": "cupcake",
+        "photo": "photos/21/01/22/cupcake3_xU1GtSu.jpg",
+        "price": 8
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 7,
+    "fields": {
+        "name": "sweet",
+        "photo": "photos/21/01/22/sweet4_pk7oHmd.jpg",
+        "price": 9
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 8,
+    "fields": {
+        "name": "sweet",
+        "photo": "photos/21/01/22/sweet3_POXyIyq.jpg",
+        "price": 5
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 9,
+    "fields": {
+        "name": "sweet",
+        "photo": "photos/21/01/22/sweet2_FSxSnLB.jpg",
+        "price": 10
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 10,
+    "fields": {
+        "name": "doughnut",
+        "photo": "photos/21/01/22/d_tsYFjYv.jpg",
+        "price": 5
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 11,
+    "fields": {
+        "name": "doughnut",
+        "photo": "photos/21/01/22/d2_zQB6YQz.jpg",
+        "price": 7
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 12,
+    "fields": {
+        "name": "doughnut",
+        "photo": "photos/21/01/22/d_W59ZX2B.jpg",
+        "price": 5
+    }
+},
+{
+    "model": "orders.order_detail",
+    "pk": 1,
+    "fields": {
+        "item_name": "cake",
+        "order_id": 1,
+        "price": 5,
+        "firstname": "sandeep sharma",
+        "city": "delhi",
+        "phone": "7903296673",
+        "message": "please delivered soon.",
+        "email": "sandeep@gmail.com",
+        "status": "delivered"
+    }
+},
+{
+    "model": "orders.order_detail",
+    "pk": 2,
+    "fields": {
+        "item_name": "cake",
+        "order_id": 1,
+        "price": 5,
+        "firstname": "ramesh",
+        "city": "delhi",
+        "phone": "7903296673",
+        "message": "soon....",
+        "email": "ramesh@gmail.com",
+        "status": "draft"
+    }
+},
+{
+    "model": "pages.about",
+    "pk": 1,
+    "fields": {
+        "photo": "photos/21/01/21/b9ca77d7-0d0b-43d0-8e25-73d22098477b_bELfOUu.jpg",
+        "about": "My name is sandeep sharma. I am the owner of this shop.\r\nwe provide cake for birthday and any other parties on suitable price"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 1,
+    "fields": {
+        "item_name": "cake item",
+        "price": 5,
+        "item_photo": "photos/21/01/22/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 2,
+    "fields": {
+        "item_name": "cake item",
+        "price": 7,
+        "item_photo": "photos/21/01/22/photo-1596567836640-3c13eb102106.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 3,
+    "fields": {
+        "item_name": "cake item",
+        "price": 10,
+        "item_photo": "photos/21/01/22/photo-1509805735646-2f72b3272a7d.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 4,
+    "fields": {
+        "item_name": "sweet item",
+        "price": 5,
+        "item_photo": "photos/21/01/22/sweet2.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 5,
+    "fields": {
+        "item_name": "sweet item",
+        "price": 6,
+        "item_photo": "photos/21/01/22/sweet3.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 6,
+    "fields": {
+        "item_name": "sweet item",
+        "price": 5,
+        "item_photo": "photos/21/01/22/sweet4.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 7,
+    "fields": {
+        "item_name": "cupcake",
+        "price": 7,
+        "item_photo": "photos/21/01/22/cupcake3.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 8,
+    "fields": {
+        "item_name": "cupcake",
+        "price": 5,
+        "item_photo": "photos/21/01/22/cupcake2.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 9,
+    "fields": {
+        "item_name": "cupcake",
+        "price": 6,
+        "item_photo": "photos/21/01/22/cupcake1.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 10,
+    "fields": {
+        "item_name": "doughnut",
+        "price": 5,
+        "item_photo": "photos/21/01/22/d4.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 11,
+    "fields": {
+        "item_name": "doughnut",
+        "price": 6,
+        "item_photo": "photos/21/01/22/d2.jpg"
+    }
+},
+{
+    "model": "pages.item",
+    "pk": 12,
+    "fields": {
+        "item_name": "doughnut",
+        "price": 10,
+        "item_photo": "photos/21/01/22/d.jpg"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$chpMhYTphzch$ZK7/q4pwI3bcMtnMF6XXk0y+GjtGdPmPe2Qz7DPnKbA=",
+        "last_login": "2021-01-22T06:03:43.140Z",
+        "is_superuser": true,
+        "username": "sandeep",
+        "first_name": "",
+        "last_name": "",
+        "email": "sandeepjec04@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-01-22T06:02:06.836Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yyvjvq0ht91qrtrwlvfr8szz12ywz5vq",
+    "fields": {
+        "session_data": "Yjk5YWUwM2I3MWNhYWIwMzI0MjI1OWQ2NGEwMjgyYmFiM2E5MGRlMTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlYjY5MTU5NDZlMmU3YmE5MjFkMThkN2Y3ODVkMDQ5NDI0NTQxMzU3In0=",
+        "expire_date": "2021-02-05T06:03:43.293Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-01-22T06:15:53.873Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "hi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-01-22T06:17:12.446Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "hi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-01-22T06:19:21.638Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "hi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-01-22T06:30:55.126Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "hi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-01-22T06:31:58.855Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "hi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-01-22T07:17:45.794Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "My name is sandeep sharma. I am the owner of this shop.\r\nwe provide cake for birthday and any other parties on suitable price",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"About\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-01-22T08:34:32.502Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "1",
+        "object_repr": "cake item",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-01-22T08:36:55.034Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "2",
+        "object_repr": "cake item",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-01-22T08:37:18.031Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "3",
+        "object_repr": "cake item",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-01-22T08:38:14.715Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "4",
+        "object_repr": "sweet item",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-01-22T08:38:38.596Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "5",
+        "object_repr": "sweet item",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-01-22T08:39:11.157Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "6",
+        "object_repr": "sweet item",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-01-22T08:40:39.887Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "7",
+        "object_repr": "cupcake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-01-22T08:40:59.598Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "8",
+        "object_repr": "cupcake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-01-22T08:41:22.422Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "9",
+        "object_repr": "cupcake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-01-22T08:42:44.327Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "10",
+        "object_repr": "doughnut",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-01-22T08:43:04.842Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "11",
+        "object_repr": "doughnut",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-01-22T08:43:30.138Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "12",
+        "object_repr": "doughnut",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-01-22T09:07:42.556Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "3",
+        "object_repr": "cake item",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-01-22T09:08:10.104Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "2",
+        "object_repr": "cake item",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-01-22T09:08:25.699Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "1",
+        "object_repr": "cake item",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-01-22T09:17:39.255Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "9",
+        "object_repr": "cupcake",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-01-22T09:17:51.888Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "8",
+        "object_repr": "cupcake",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-01-22T09:18:08.937Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "7",
+        "object_repr": "cupcake",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-01-22T09:31:47.129Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "6",
+        "object_repr": "sweet item",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2021-01-22T09:32:00.714Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "5",
+        "object_repr": "sweet item",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2021-01-22T09:32:16.805Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "4",
+        "object_repr": "sweet item",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-01-22T09:34:40.288Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "12",
+        "object_repr": "doughnut",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2021-01-22T09:34:58.316Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "11",
+        "object_repr": "doughnut",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2021-01-22T09:35:23.056Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "pages",
+            "item"
+        ],
+        "object_id": "10",
+        "object_repr": "doughnut",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Item photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2021-01-22T12:59:02.137Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "cake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2021-01-22T12:59:27.963Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "2",
+        "object_repr": "cake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2021-01-22T12:59:49.591Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "3",
+        "object_repr": "cake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2021-01-22T13:00:17.254Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "4",
+        "object_repr": "cupcake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2021-01-22T13:00:40.917Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "5",
+        "object_repr": "cupcake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2021-01-22T13:01:03.989Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "6",
+        "object_repr": "cupcake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2021-01-22T13:01:27.718Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "7",
+        "object_repr": "sweet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2021-01-22T13:01:46.917Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "8",
+        "object_repr": "sweet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2021-01-22T13:02:08.425Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "9",
+        "object_repr": "sweet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2021-01-22T13:03:03.952Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "10",
+        "object_repr": "doughnut",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2021-01-22T13:03:23.466Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "11",
+        "object_repr": "doughnut",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2021-01-22T13:03:43.014Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order"
+        ],
+        "object_id": "12",
+        "object_repr": "doughnut",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2021-01-23T11:53:57.372Z",
+        "user": [
+            "sandeep"
+        ],
+        "content_type": [
+            "orders",
+            "order_detail"
+        ],
+        "object_id": "1",
+        "object_repr": "sandeep@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+}
+]
